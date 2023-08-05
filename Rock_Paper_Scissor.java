@@ -5,11 +5,12 @@ import java.util.Scanner;
 
 public class Rock_Paper_Scissor {
     public static void main(String[] args) {
-        rule();
-        match();
+        rule();         // method call for rule of the game
+        match();        // all matches are here
 
     }
 
+    //rules of the game
     public static void rule() {
         System.out.println("Three thing are there :--- Rock , Paper and Scissor");
         System.out.println("you and computer both will select one among the three ");
@@ -19,6 +20,7 @@ public class Rock_Paper_Scissor {
         System.out.println("3...   paper beat rock");
     }
 
+    // start the match
     public static void match() {
         System.out.println("\nlets start the game\n");
         System.out.println("press 1 for Rock , 2 for Paper and 3 for Scissor");
@@ -90,6 +92,7 @@ public class Rock_Paper_Scissor {
             }
             System.out.println("score is " + win + "-" + loss);
             if (match == 5) {
+                System.out.println("all matches over");
                 break;
             }
             System.out.println("press 1 for Rock , 2 for Paper and 3 for Scissor");
